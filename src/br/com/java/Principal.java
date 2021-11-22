@@ -2,6 +2,9 @@ package br.com.java;
 
 import java.util.Scanner;
 
+import br.com.java.view.MenuCliente;
+import br.com.java.view.MenuFuncionario;
+
 public class Principal {
 	
 	private static Scanner teclado = new Scanner(System.in);
@@ -16,24 +19,24 @@ public class Principal {
 			System.out.println("----------------------------------");
 			System.out.println("----------MENU PRINCIPAL----------");
 			System.out.println("1 - Menu Cliente\n"
-					         + "2 - Menu Funcionário\n"
+					         + "2 - Menu Funcionï¿½rio\n"
 					         + "0 - Sair");
 			
-			opcao = lerInteiro("\nDigite uma opção");
+			opcao = lerInteiro("\nDigite uma opï¿½ï¿½o");
 			
 			switch (opcao) {
 			case 1:
-				
+				MenuCliente.carregar();
 				break;
             case 2:
-				
+				MenuFuncionario.carregar();
 				break;
             case 0:
 				
 				break;
 
 			default:
-				System.out.println("\n -- Opção Inválida!! --\n");
+				System.out.println("\n -- Opï¿½ï¿½o Invï¿½lida!! --\n");
 				break;
 			}
 			
@@ -51,7 +54,7 @@ public class Principal {
 				opcaoCorreta = true;
 			} catch (NumberFormatException e) {
 				// TODO: handle exception
-				System.out.println("\nDigite apenas números");
+				System.out.println("\nDigite apenas nï¿½meros");
 			}
 			
 		} while (!opcaoCorreta);

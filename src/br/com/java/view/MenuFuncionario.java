@@ -44,6 +44,10 @@ public class MenuFuncionario {
                     CadastrarLivro.carregar();
                     break;
 
+                case 6:
+                    DevolucaoLivro.carregar();
+                    break;    
+
                 case 7:
                     Acervo.carregar();
                     break;
@@ -59,6 +63,7 @@ public class MenuFuncionario {
 
         } while (opcao != 0);
     }
+    
     public static int lerInteiro(String msg) {
 		boolean opcaoCorreta = false;
 		int valor = 0;

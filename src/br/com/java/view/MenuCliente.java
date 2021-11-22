@@ -27,7 +27,7 @@ public class MenuCliente {
                     break;
 
                 case 2:
-                    
+                    EmprestarLivro.carregar();
                     break;
 
                 case 3:

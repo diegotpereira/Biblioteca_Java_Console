@@ -49,10 +49,11 @@ public class MenuFuncionario {
                     break;
 
                 case 0:
-                    
+                    System.out.println("\nRetornar ao menu principal");
                     break;
             
                 default:
+                    System.out.println("\n -- Opção Inválida! -- \n");
                     break;
             }
 

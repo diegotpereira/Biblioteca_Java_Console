@@ -111,7 +111,7 @@ public class Livro {
     @Override
     public String toString() {
         return "Código do livro: " + getCodLivro() +
-				"\nTítulo: " + getTitulo() + 
+				"\nTitulo: " + getTitulo() + 
 				"\nEditora: " + getEditora() +
 				"\nAutor: " + getAutor() +
 				"\nAssunto " + getAssunto() +

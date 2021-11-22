@@ -7,7 +7,7 @@ public class Funcionario extends Pessoa{
 	
 	@Override
 	public String toString() {
-		return  "\nCódigo: " + getCodigo() +
+		return  "\nCodigo: " + getCodigo() +
 				"\nNome: " + getNome() + 
 				"\nSexo: " + getSexo() +
 				"\nIdade: " + getIdade() +

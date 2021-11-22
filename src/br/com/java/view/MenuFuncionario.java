@@ -33,11 +33,11 @@ public class MenuFuncionario {
                     break;
 
                 case 3:
-                    
+                    CadastrarFuncionario.carregar();
                     break;
 
                 case 4:
-                    
+                    ListarFuncionarios.carregar();
                     break;
 
                 case 5:

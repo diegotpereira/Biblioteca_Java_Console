@@ -59,7 +59,7 @@ public class MenuCliente {
 		do {
 			
 			try {
-				System.out.println("msg");
+				System.out.println(msg);
 				valor = Integer.parseInt(teclado.next());
 				opcaoCorreta = true;
 			} catch (NumberFormatException e) {

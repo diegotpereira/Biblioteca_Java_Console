@@ -25,11 +25,11 @@ public class MenuFuncionario {
 
             switch (opcao) {
                 case 1:
-                    
+                    CadastrarCliente.carregar();
                     break;
 
                 case 2:
-                    
+                    ListarClientes.carregar();
                     break;
 
                 case 3:
@@ -65,7 +65,7 @@ public class MenuFuncionario {
 		do {
 			
 			try {
-				System.out.println("msg");
+				System.out.println(msg);
 				valor = Integer.parseInt(teclado.next());
 				opcaoCorreta = true;
 			} catch (NumberFormatException e) {

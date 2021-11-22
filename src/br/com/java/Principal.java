@@ -19,10 +19,10 @@ public class Principal {
 			System.out.println("----------------------------------");
 			System.out.println("----------MENU PRINCIPAL----------");
 			System.out.println("1 - Menu Cliente\n"
-					         + "2 - Menu Funcion�rio\n"
+					         + "2 - Menu Funcionário\n"
 					         + "0 - Sair");
 			
-			opcao = lerInteiro("\nDigite uma op��o");
+			opcao = lerInteiro("\nDigite uma Opção");
 			
 			switch (opcao) {
 			case 1:
@@ -32,11 +32,11 @@ public class Principal {
 				MenuFuncionario.carregar();
 				break;
             case 0:
-				
+				System.out.println("\nSaindo...");
 				break;
 
 			default:
-				System.out.println("\n -- Op��o Inv�lida!! --\n");
+				System.out.println("\n -- Opção Inválida!! --\n");
 				break;
 			}
 			
@@ -49,12 +49,12 @@ public class Principal {
 		do {
 			
 			try {
-				System.out.println("msg");
+				System.out.println(msg);
 				valor = Integer.parseInt(teclado.next());
 				opcaoCorreta = true;
 			} catch (NumberFormatException e) {
 				// TODO: handle exception
-				System.out.println("\nDigite apenas n�meros");
+				System.out.println("\nDigite apenas números");
 			}
 			
 		} while (!opcaoCorreta);

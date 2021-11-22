@@ -2,6 +2,10 @@ package br.com.java.view;
 
 import java.util.Scanner;
 
+import br.com.java.dao.LivroDao;
+import br.com.java.modelo.Livro;
+import br.com.java.utils.Console;
+
 public class MenuCliente {
     
     private static Scanner teclado = new Scanner(System.in);
@@ -31,7 +35,17 @@ public class MenuCliente {
                     break;
 
                 case 3:
-                    
+                    String pesquisar = Console.readString("Pesquisar Livro por Título: ");
+
+                    for(Livro livroCadastrado : LivroDao.retornarLivros()) {
+                        if (pesquisar.equals(livroCadastrado.getTitulo())) {
+                            System.out.println("\nLivro encontrado!");
+                            System.out.println(livroCadastrado);
+
+                        } else {
+                            System.out.println("\nLivro não encontrado!");
+                        }
+                    }
                     break;
 
                 case 4:

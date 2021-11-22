@@ -35,7 +35,7 @@ public class MenuCliente {
                     break;
 
                 case 3:
-                    String pesquisar = Console.readString("Pesquisar Livro por Título: ");
+                    String pesquisar = Console.readString("Pesquisar Livro por Título: \n");
 
                     for(Livro livroCadastrado : LivroDao.retornarLivros()) {
                         if (pesquisar.equals(livroCadastrado.getTitulo())) {
@@ -49,18 +49,19 @@ public class MenuCliente {
                     break;
 
                 case 4:
-                    
+                    ComprarLivros.carregar();
                     break;
 
                 case 5:
-                    
+                    VenderLivros.carregar();
                     break;
 
                 case 0:
-                    
+                    System.out.println("\nRetornando ao menu principal");
                     break;
             
                 default:
+                    System.out.println("\n -- Opção Inválida! --\n");
                     break;
             }
 
